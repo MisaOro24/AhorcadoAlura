@@ -1,0 +1,170 @@
+.logo {
+    margin: 50px 0px 0px 50px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+#myCanvas {
+    display: block;
+    margin: auto;
+}
+
+.botones {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.botones button {
+    width: 125px;
+    height: 50px;
+    border-radius: 20px;
+    border-style: none;
+
+}
+
+.botones button:active {
+    transform: scale(1.1);
+}
+
+#btnNuevoJuego,
+#btnGuardar {
+    background-color: darkblue;
+    color: white;
+    margin-right: 25px;
+}
+
+#contenedorLetras {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    width: 300px;
+    margin: 0 auto;
+
+}
+
+.unDiv {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 24px;
+    width: 50px;
+    height: 25px;
+    border: 1px solid #000000;
+    ;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: darkblue;
+    border-bottom-width: 2px;
+    margin: 10px;
+}
+
+#btnIniciarJuego {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    background-color: darkblue;
+    color: white;
+}
+
+#btnAgregarPalabra {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.advertencia {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.advertencia p {
+    margin-left: 5px;
+}
+
+#pantallaAgregarPalabra {
+    width: 500px;
+}
+
+#pantallaAgregarPalabra input {
+    display: flex;
+    margin: 100px auto 225px;
+    width: 300px;
+    font-size: 32px;
+    border-style: none;
+    outline: none;
+    color: gray;
+}
+
+#btnEmpezar {
+    margin-left: 25px;
+}
+
+#letrasFalladas {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#letrasFalladas p {
+    margin-left: 10px;
+    font-size: medium
+}
+
+#teclado {
+    text-align: center;
+    width: 300px;
+}
+
+#teclado button {
+    width: 25px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: darkblue;
+    color: white;
+
+}
+
+@media screen and (max-width: 690px) {
+    #pantallaAgregarPalabra {
+        width: 300px;
+    }
+
+    #pantallaAgregarPalabra input {
+        margin: 100px auto 25px;
+    }
+
+    .botonesPantallaAgregarPalabra {
+        display: flex;
+    }
+
+    #teclado {
+        width: 320px;
+    }
+
+    #teclado button {
+        width: 30px;
+        height: 33px;
+        border-radius: 5px;
+        border-style: none;
+        background-color: darkblue;
+        color: white;
+
+    }
+
+    #teclado button:active {
+        transform: scale(1.1);
+    }
+
+    #pantallaTablero {
+        width: 320px;
+    }
+
+}

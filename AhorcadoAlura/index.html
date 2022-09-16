@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/logo.svg" alt="Logo de Alura">
+    </header>
+    <main>
+        <div id="pantallaPrincipal">
+            <div class="botones">
+                <button id="btnIniciarJuego">Iniciar Juego</button>
+                <button id="btnAgregarPalabra">Agregar Palabra</button>
+            </div>
+        </div>
+        <div id="pantallaAgregarPalabra" hidden>
+            <input id="entrada" type="text" maxlength="8" placeholder="escriba una palabra">
+            <div class="advertencia">
+                <img src="images/aviso.svg" alt="Ícono de información">
+                <p>Máx. 8 caracteres</p>
+            </div>
+            <div class="botones botonesPantallaAgregarPalabra">
+                <button id="btnGuardar">Añadir</button>
+                <button id="btnCancelar">Cancelar</button>
+                <button id="btnEmpezar">Empezar</button>
+            </div>
+        </div>
+        <div id="pantallaTablero" hidden>
+            <canvas id="myCanvas" width="300" height="245"></canvas>
+            <div id="contenedorLetras"></div>
+            <div id="letrasFalladas"></div>
+            <div id="teclado">
+                <button>Q</button>
+                <button>W</button>
+                <button>E</button>
+                <button>R</button>
+                <button>T</button>
+                <button>Y</button>
+                <button>U</button>
+                <button>I</button>
+                <button>O</button>
+                <br>
+                <br>
+                <button>P</button>
+                <button>A</button>
+                <button>S</button>
+                <button>D</button>
+                <button>F</button>
+                <button>G</button>
+                <button>H</button>
+                <button>J</button>
+                <button>K</button>
+                <br>
+                <br>
+                <button>L</button>
+                <button>Ñ</button>
+                <button>Z</button>
+                <button>X</button>
+                <button>C</button>
+                <button>V</button>
+                <button>B</button>
+                <button>N</button>
+                <button>M</button>
+            </div>
+            <div class="botones">
+                <button id="btnNuevoJuego">Nuevo Juego</button>
+                <button id="btnDesistir">Desistir</button>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
